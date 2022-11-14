@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>My Layout</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header">
+                <table id="headertable">
+                    <tr><td>Date</td></tr>
+                </table>    
+            </div>
+            <div id="menus">
+                <table id="menustable">
+                    <tr>
+                        <td><a href="#">Home </a></td>
+                        <td><a href="Aboutus.html">About us</a></td>
+                        <td><a href="Servics.html">Services</a></td>
+                        <td><a href="Gallery.html">Gallery</a></td>
+                        <td><a href="contactus.html">Contact us</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div id="lcontent">
+                <img src="image/img.jpeg">
+            </div>
+            <div id="rcontent">
+                <br><br>
+                <form name="loginform" method="post" action="login.py" enctype="multipart/form-data">
+                   <table id="rcontenttable">
+                    <tr><th>Sign in with ur account</th></tr>
+                    <tr><td><input type="text" name="utext" id="utext"onBlur='return emptyUser();'></td></tr>
+                    <tr><td id="uerr"></td></tr>
+                    <tr><td><input type="password" name="ptext" id="ptext"onBlur='return emptyPwd();'></td></tr>
+                    <tr><td id="perr"></td></tr>
+                    <tr><td><input type="submit" value="Login" name="lbutton" onClick='return loginvalidate();'></td></tr>
+                    <tr><td>If New user <a href="register.html">Register here</a></td></tr>
+                    <tr><td><a href="forgotpwd.html">Forgot Password</a></td></tr>
+                   </table>
+                </form>
+            </div>
+            <div id="footer">
+              <table id="footertable">
+                <tr><td>&copy;Reserved to company</td></tr>
+            </table>  
+            </div>
+            
+        </div>
+    </body>
+
+</html>

@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>My Layout</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/script.js"></script>
+    </head>
+    <body>
+        <form action="register.py" name="registerform" method="post" enctype="multipart/form-data">
+            <div id="container">
+                <div id="header">
+                    <table id="headertable">
+                        <tr><td>Date</td></tr>
+                    </table>
+                </div>
+                <div id="menus">
+                    <table id="menustable">
+                        <tr>
+                            <td><a href="index.html">Home </a></td>
+                            <td><a href="Aboutus.html">About us</a></td>
+                            <td><a href="Servics.html">Services</a></td>
+                            <td><a href="Gallery.html">Gallery</a></td>
+                            <td><a href="contactus.html">Contact us</a></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="rbodycontent">
+                    <table id="rbodycontenttable">
+                        <tr><th>REGISTER HERE</th></tr>
+                        <tr><td><input type="text" name="fname" id="fname" placeholder="Enter First Name" maxlength="20" value=""></td></tr>
+                        <tr><td><input type="text" name="lname" id="lname" placeholder="Enter Last Name" maxlength="20" value=""></td></tr>
+                        <tr><td><input type="text" name="uname" id="uname" placeholder="Enter User Name" maxlength="20" value=""></td></tr>
+                        <tr><td><input type="password" name="upwd" id="upwd" placeholder="Enter Password" maxlength="10" value=""></td></tr>
+                        <tr><td><input type="password" name="ucpwd" id="ucpwd" placeholder="Enter Confirm Password" maxlength="10" value=""></td></tr>
+                        <tr><td><input type="text" name="umobile" id="umobile" placeholder="Enter Mobile number" maxlength="10" value=""></td></tr>
+                        <tr><td><input type="email" name="uemail" id="uemail" placeholder="Enter Email Id" value=""></td></tr>
+                        <tr><td>Gender: <input type="radio" name="ugender" id="ugender" value="Male">Male &nbsp;&nbsp;&nbsp;&nbsp;
+                                        <input type="radio" name="ugender" id="ugender" value="Male">Female</td></tr>
+                    </table>
+                </div>
+                <div id="lbodycontent">
+                    <table id="lbodycontenttable">
+                        <tr><th>Register here</th></tr>
+                        <tr><td>Date of birth:<input type="date" name="udate" id="udate"><td></tr>
+                            <tr><td><textarea name="uaddress"id="uaddress" rows="10" cols="30"placeholder="Address"></textarea></td></tr>
+                            <tr><td><select name="ucountry" id="ucountry">
+                                <option value="0">-----Select Country-----
+                                <option value="India">India
+                                <option value="Australia">Australia
+                            </select></td></tr>
+                            <tr><td><select name="ustate" id="ustate"disabled>
+                                <option value="0">-----Select State-------</option>
+                            </select></td></tr>
+                            <tr><td><select name="ucity" id="ucity" disabled>
+                                <option value="0">-----Select City-------</option>
+                            </select></td></tr>
+                            <tr><td><input type="checkbox" name="utoc" id="utoc" value="Accept">Accept the terms and conditions</td></tr>
+                    </table>
+                </div>
+                <table id="registerbuttontable">
+                    <tr><td><input type="submit" name="rbutton" id="rbutton" value="Register">&nbsp;&nbsp;&nbsp;<input type="reset" name="resbutton" id="resbutton" value="Reset"></td></tr>
+                </table>
+                <div id="footer">
+                    <table id="footertable">
+                        <tr><td>&copy;Reserved to company</td></tr>
+                    </table>  
+                  </div>
+            </div>
+        </form>
+    </body>
